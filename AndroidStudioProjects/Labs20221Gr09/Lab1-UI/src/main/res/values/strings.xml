@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Labs20221-Gr09</string>
+    <string name="app_name">dropDownMenuExample</string>
+    <string-array name="Escolaridad">
+        <item>Primaria</item>
+        <item>Secundaria</item>
+        <item>Técnico</item>
+        <item>Tecnólogo</item>
+        <item>Profesional</item>
+        <item>Posgrado</item>
+    </string-array>
 </resources>
