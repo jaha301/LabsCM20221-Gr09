@@ -92,7 +92,8 @@
             android:textSize="16sp"
             android:typeface="serif"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
-            app:layout_constraintEnd_toStartOf="@+id/guideline4" />
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/sexo3"
@@ -110,7 +111,8 @@
             android:textSize="16sp"
             android:typeface="serif"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
-            app:layout_constraintEnd_toStartOf="@+id/guideline4" />
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <EditText
             android:id="@+id/nombres"
@@ -121,25 +123,26 @@
             android:layout_marginBottom="224dp"
             android:ems="10"
             android:gravity="start|top"
-            android:hint='Nombres'
+            android:hint='Nombres *'
             android:inputType="textMultiLine"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintHorizontal_bias="0.571"
-            app:layout_constraintStart_toStartOf="@+id/guideline4" />
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            tools:ignore="TouchTargetSizeCheck" />
 
 
         <EditText
             android:id="@+id/etDate"
             android:layout_width="241dp"
-            android:layout_height="40dp"
+            android:layout_height="48dp"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="56dp"
-            android:focusable="false"
             android:ems="10"
+            android:focusable="false"
             android:gravity="start|top"
-            android:hint='Fecha de Nacimiento'
+            android:hint='Fecha de Nacimiento *'
             android:inputType="textMultiLine"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
@@ -155,12 +158,13 @@
             android:layout_marginTop="4dp"
             android:ems="10"
             android:gravity="start|top"
-            android:hint="Apellidos"
+            android:hint="Apellidos *"
             android:inputType="textMultiLine"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintHorizontal_bias="0.513"
             app:layout_constraintStart_toStartOf="@+id/guideline4"
-            app:layout_constraintTop_toBottomOf="@+id/nombres" />
+            app:layout_constraintTop_toBottomOf="@+id/nombres"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/checkBox"
@@ -171,7 +175,8 @@
             android:layout_marginBottom="120dp"
             android:text="Mujer"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
-            app:layout_constraintStart_toEndOf="@+id/checkBox2" />
+            app:layout_constraintStart_toEndOf="@+id/checkBox2"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/checkBox2"
@@ -184,7 +189,8 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintHorizontal_bias="0.691"
             app:layout_constraintStart_toStartOf="@+id/guideline4"
-            app:layout_constraintTop_toBottomOf="@+id/apellidos" />
+            app:layout_constraintTop_toBottomOf="@+id/apellidos"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <android.support.constraint.Group
             android:id="@+id/group"
@@ -207,7 +213,8 @@
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintHorizontal_bias="0.55"
-            app:layout_constraintStart_toStartOf="@+id/guideline4" />
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <android.support.constraint.Group
             android:id="@+id/group4"

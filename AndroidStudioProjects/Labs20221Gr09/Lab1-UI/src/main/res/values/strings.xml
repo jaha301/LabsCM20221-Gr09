@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">dropDownMenuExample</string>
+    <string name="Paises" />
     <string-array name="Escolaridad">
+        <item>Primaria</item>
+        <item>Secundaria</item>
+        <item>Técnico</item>
+        <item>Tecnólogo</item>
+        <item>Profesional</item>
+        <item>Posgrado</item>
+    </string-array>
+    <string-array name="Paises1">
         <item>Primaria</item>
         <item>Secundaria</item>
         <item>Técnico</item>

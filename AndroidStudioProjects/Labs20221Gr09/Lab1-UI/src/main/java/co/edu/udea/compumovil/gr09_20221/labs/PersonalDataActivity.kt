@@ -27,6 +27,9 @@ class PersonalDataActivity : AppCompatActivity(), View.OnClickListener {
         eDate?.setOnClickListener(this)
 
         but.setOnClickListener{
+
+
+
             val nom = findViewById(R.id.nombres) as TextView
             val ape = findViewById(R.id.apellidos) as TextView
             val esco = findViewById(R.id.escola) as Spinner
@@ -37,14 +40,28 @@ class PersonalDataActivity : AppCompatActivity(), View.OnClickListener {
             var genero = ""
             if(hombre.isChecked){genero="Hombre"}
             if(mujer.isChecked){genero="Mujer"}
-            val presona = Persona(nom.toString(),ape.toString(), eDate.toString(),genero, esco.selectedItem.toString())
 
-           // println(presona.toString())
 
-            Log.i(TAG, "\n."+" \nInformación Personal: \nNombre: "+nom.text.toString()+ " "+ape.text.toString()+"\n"+genero.toString()+"\nNació el "+ nacio+"\n"+esco.selectedItem.toString())
-            val intent = Intent(this,PersonalDataActivity::class.java)
-            startActivity(intent)
+            if(nom.text.toString()==""||ape.text.toString()==""|| nacio.toString()=="") {
+                Log.d(TAG, "los campos con * son obligatorios")
+            }
+            else {
+                val presona = Persona(
+                    nom.toString(),
+                    ape.toString(),
+                    eDate.toString(),
+                    genero,
+                    esco.selectedItem.toString()
+                )
+                // println(presona.toString())
+                Log.i(
+                    TAG,
+                    "\n." + " \nInformación Personal: \nNombre: " + nom.text.toString() + " " + ape.text.toString() + "\n" + genero.toString() + "\nNació el " + nacio + "\n" + esco.selectedItem.toString()
+                )
+                val intent = Intent(this, InfoPersonal::class.java)
+                startActivity(intent)
 
+            }
         }
 
 
@@ -75,35 +92,7 @@ class DatePickerFragment (val listener: (year:Int, month:Int, day:Int ) -> Unit)
     }
 }
 
-    fun onCheckboxClicked(view: View) {
-
-
-        if (view is CheckBox) {
-            val checked: Boolean = view.isChecked
-
-            when (view.id) {
-                R.id.checkBox2 -> {
-                    if (checked) {
-                                     } else {
-                        // Remove the meat
-                    }
-                }
-                R.id.checkBox-> {
-                    if (checked) {
-                        // Cheese me
-                    } else {
-                        // I'm lactose intolerant
-                    }
-                }
-                // TODO: Veggie sandwich
-            }
-        }
-    }
-
  data class Persona (val nombre: String,val apellido: String,    val age: String ,val gender: String,val esolcaridad: String )
-
-
-
 
 }
 
