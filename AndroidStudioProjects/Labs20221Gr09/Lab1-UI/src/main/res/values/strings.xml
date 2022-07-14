@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">dropDownMenuExample</string>
-    <string name="Paises" />
+    <string name="app_name">Formulario de Información</string>
     <string-array name="Escolaridad">
         <item>Primaria</item>
         <item>Secundaria</item>

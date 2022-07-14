@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:focusable="auto">
+    android:focusable="auto"
+    tools:ignore="ExtraText">
+    android:label="Formulario de Información"
 
     <android.support.constraint.ConstraintLayout
 

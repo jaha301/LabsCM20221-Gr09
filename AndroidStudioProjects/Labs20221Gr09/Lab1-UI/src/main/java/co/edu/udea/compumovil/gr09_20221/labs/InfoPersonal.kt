@@ -15,8 +15,6 @@ class InfoPersonal : AppCompatActivity() {
         val butt = findViewById(R.id.button3) as Button
 
         butt.setOnClickListener {
-
-
             val COUNTRIES = arrayOf(
                 "Afghanistan",
                 "Albania",

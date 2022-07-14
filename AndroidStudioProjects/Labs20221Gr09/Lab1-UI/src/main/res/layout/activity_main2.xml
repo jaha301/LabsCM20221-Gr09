@@ -126,13 +126,14 @@
             android:completionHint="Pais"
             android:dropDownHeight="match_parent"
             android:hint="Pais *"
-            android:text="@string/Paises"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintHorizontal_bias="0.458"
             app:layout_constraintStart_toStartOf="@+id/guideline4"
             app:layout_constraintTop_toBottomOf="@+id/Email"
             tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
-            tools:text="@string/Paises" />
+
+            />
+
 
         <AutoCompleteTextView
             android:id="@+id/autoCiudad"
